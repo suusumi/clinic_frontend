@@ -1,0 +1,1 @@
+export {PrivacyPolicyPage} from "src/pages/privacy-policy/ui/PrivacyPolicyPage";
