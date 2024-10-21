@@ -1,5 +1,5 @@
-import darkThemeLogo from '../footer_logo.svg';
-import lightThemeLogo from '../header_logo.svg';
+import darkThemeLogo from '../../footer_logo.svg';
+import lightThemeLogo from '../../header_logo.svg';
 import {useSelector} from "react-redux";
 import {RootState} from "src/app/store";
 
