@@ -1,0 +1,1 @@
+export {HttpClient} from "src/shared/api/httpClient";
