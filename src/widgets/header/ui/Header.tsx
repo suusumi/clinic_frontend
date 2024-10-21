@@ -1,4 +1,5 @@
-import {AppBar, Box, CssBaseline, IconButton, Toolbar} from "@mui/material";
+import {AppBar, Box, CssBaseline, Toolbar} from "@mui/material";
+import {Logo} from "src/shared/assets/logo";
 
 export const Header = () => {
     return (
@@ -6,8 +7,7 @@ export const Header = () => {
             <CssBaseline />
             <AppBar component="nav">
                 <Toolbar>
-                    <IconButton/>
-
+                   <Logo/>
                 </Toolbar>
             </AppBar>
         </Box>
