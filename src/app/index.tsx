@@ -13,24 +13,12 @@ const reactRoot = createRoot(
 );
 
 const RootComponent = () => {
-    // Выбираем тему из Redux
+    // Выбираем тему
     const theme = useSelector((state: RootState) => state.theme);
-    const dispatch = useDispatch();
 
     return (
         <ThemeProvider theme={theme.darkTheme ? darkTheme : lightTheme}>
             <App />
-            <FormGroup sx={{marginTop:'20px'}}>
-                <FormControlLabel
-                    control={
-                        <Switch
-                            checked={theme.darkTheme}
-                            onChange={() => dispatch(toggleTheme())}
-                        />
-                    }
-                    label="Toggle Theme"
-                />
-            </FormGroup>
         </ThemeProvider>
     );
 };

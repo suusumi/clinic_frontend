@@ -4,7 +4,7 @@ export const lightTheme = createTheme({
     palette: {
         mode: "light",
         primary: {
-            main: '#6456ff',
+            main: '#288e81',
         },
         background: {
             paper: "#f3f7fa",
@@ -18,7 +18,7 @@ export const lightTheme = createTheme({
             styleOverrides: {
                 root: {
                     boxShadow: "none",
-                    backgroundColor: "transparent",
+                    backgroundColor: "#ffffff",
                 }
             }
         },
@@ -26,6 +26,22 @@ export const lightTheme = createTheme({
 });
 
 export const darkTheme = createTheme({
-    palette: {},
-    components: {}
+    palette: {
+        mode: "dark",
+        primary: {
+            main: '#288e81',
+        },
+        background: {
+            paper: "#393939",
+        }
+    },
+    components: {
+        MuiAppBar: {
+            styleOverrides: {
+                root: {
+                    boxShadow: "none",
+                }
+            }
+        }
+    }
 });

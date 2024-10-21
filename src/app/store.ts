@@ -1,7 +1,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import {persistReducer, persistStore} from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import themeReducer from "src/entities/theme/themeSlice";
+import themeReducer from "src/entities/theme/themeSlice";   // TODO: красивый импорт через index.ts в /theme?
 
 const persistConfig = {
     key: 'root',
